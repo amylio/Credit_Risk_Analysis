@@ -125,7 +125,7 @@ Compare two new `Machine Learning` models that reduce bias to predict credit ris
 
 # Summary
 
-In reviewing all six models, the `EasyEnsembleClassifer` model yielded the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk candidates. The sensitivity rate (aka recall) was also the highest at 92% compared to the other models. The results for predicting "Low Risk" was also the highest with the sensitivity rate at 94% and an F1 score of 97%.
+In reviewing all six models, the `EasyEnsembleClassifer` model yielded the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk candidates. The sensitivity rate (aka recall) was also the highest at 92% compared to the other models. The result for predicting "Low Risk" was also the highest with the sensitivity rate at 94% and an F1 score of 97%. Therefore, if a model needed to be recommended to perform this type of analysis, then this one would be the clear choice.
 
 **Ranking of models in descending order based on "High Risk" results:**
 * `EasyEnsembleClassifer`: 93.2% accuracy, 9% precision, 92% recall, and 16% F1 Score
@@ -135,7 +135,7 @@ In reviewing all six models, the `EasyEnsembleClassifer` model yielded the best 
 * `RandomOverSampler`: 64.0% accuracy, 1% precision, 66% recall and 2% F1 Score
 * `ClusterCentroids`: 54.5% accuracy, 1% precision, 69% recall and 1% F1 Score
 
-After reviewing the results, the best approach would be using the "Easy Ensemble AdaBoost Classifier". However, we should consider that original dataset had 99% of the applications classified as "Low Risk" with only 1% of the data classified in the "High Risk" category. This may skew the results greatly as there is a risk that the `Machine Learning` algorithms are creating clusters drawing from too small of a dataset of actual "High Risk" applications. This margin of risk might not be something that banks would be comfortable accepting.
+A side note that should be considered is that original dataset had 99% of the applications classified as "Low Risk" with only 1% of the data classified in the "High Risk" category. This may skew the results greatly as there is a risk that the `Machine Learning` algorithms are creating clusters drawing from too small of a dataset of actual "High Risk" applications. This margin of risk might not be something that banks would be comfortable accepting.
 
 # Resources
 
